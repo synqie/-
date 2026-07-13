@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Canopy Menu | Gorilla Tag Mod Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-prestart">
+    <button class="intro-screen" type="button" aria-label="Start Canopy Menu experience">
+      <span class="intro-glitch" data-text="CLICK TO START">CLICK TO START</span>
+      <span class="intro-subtext">audio armed</span>
+    </button>
+    <audio id="start-audio" src="start-audio.mp3" preload="auto"></audio>
+
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Canopy Menu home">
+        <span class="brand-mark">CM</span>
+        <span>Canopy Menu</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#drops">Drops</a>
+      </nav>
+      <a class="header-action" href="#download">Get Menu</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Private lobbies • cosmetics • movement tools</p>
+          <h1>Canopy Menu</h1>
+          <p class="hero-text">
+            A sharp, neon jungle control panel for Gorilla Tag creators who want custom rooms,
+            clean toggles, and a menu that feels fast in VR.
+          </p>
+          <div class="hero-actions" id="download">
+            <a class="button primary" href="#preview">View Preview</a>
+            <a class="button secondary" href="#features">Explore Tools</a>
+          </div>
+          <div class="trust-row" aria-label="Project highlights">
+            <span>Cosmetic focused</span>
+            <span>VR readable</span>
+            <span>Private room ready</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Stylized mod menu preview">
+          <div class="vr-stage">
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+            <div class="branch branch-one"></div>
+            <div class="branch branch-two"></div>
+            <div class="menu-panel">
+              <div class="panel-top">
+                <span class="status-dot"></span>
+                <span>Canopy OS</span>
+                <span class="panel-version">v4.2</span>
+              </div>
+              <div class="panel-grid">
+                <button class="menu-tile active">
+                  <span>Speed Trail</span>
+                  <strong>ON</strong>
+                </button>
+                <button class="menu-tile">
+                  <span>Ghost Hands</span>
+                  <strong>FX</strong>
+                </button>
+                <button class="menu-tile">
+                  <span>Color Pulse</span>
+                  <strong>RGB</strong>
+                </button>
+                <button class="menu-tile active">
+                  <span>Room Tools</span>
+                  <strong>LIVE</strong>
+                </button>
+              </div>
+              <div class="signal">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="floating-chip chip-one">LOW LATENCY</div>
+            <div class="floating-chip chip-two">COSMETICS</div>
+            <div class="floating-chip chip-three">PRIVATE</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Feature ticker">
+        <div>
+          <span>hand-locked UI</span>
+          <span>creator presets</span>
+          <span>color themes</span>
+          <span>smooth toggles</span>
+          <span>room utilities</span>
+          <span>hand-locked UI</span>
+          <span>creator presets</span>
+          <span>color themes</span>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Built for sessions</p>
+          <h2>Everything feels instant, readable, and loud in the best way.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>VR-first layout</h3>
+            <p>Big hit targets, punchy contrast, and compact pages that stay readable while you are moving.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Creator presets</h3>
+            <p>Save cosmetic stacks, color pulses, and private-room settings into quick-launch loadouts.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Clean effects</h3>
+            <p>Trails, particles, hand glow, and sound-reactive UI states made for custom lobby moments.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="preview-section" id="preview">
+        <div class="preview-copy">
+          <p class="eyebrow">Live menu concept</p>
+          <h2>Toggle the vibe.</h2>
+          <p>
+            Switch themes and watch the preview react. The whole site is built as a real usable landing page,
+            ready to rename, expand, or wire to your download.
+          </p>
+        </div>
+        <div class="interactive-preview" data-theme="acid">
+          <div class="preview-toolbar" role="group" aria-label="Theme picker">
+            <button class="theme-button active" data-theme="acid">Acid</button>
+            <button class="theme-button" data-theme="ember">Ember</button>
+            <button class="theme-button" data-theme="ice">Ice</button>
+          </div>
+          <div class="preview-window">
+            <div class="window-header">
+              <span></span>
+              <strong>PLAYER PANEL</strong>
+              <span>72 FPS</span>
+            </div>
+            <div class="toggle-list">
+              <label>
+                <span>Neon hands</span>
+                <input type="checkbox" checked />
+              </label>
+              <label>
+                <span>Trail burst</span>
+                <input type="checkbox" checked />
+              </label>
+              <label>
+                <span>Room tools</span>
+                <input type="checkbox" />
+              </label>
+              <label>
+                <span>Streamer mode</span>
+                <input type="checkbox" checked />
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="drops" id="drops">
+        <div>
+          <p class="eyebrow">Style drops</p>
+          <h2>Menu skins with a little bite.</h2>
+        </div>
+        <div class="drop-list">
+          <article>
+            <span class="swatch acid"></span>
+            <h3>Acid Canopy</h3>
+            <p>Electric green highlights with black glass panels.</p>
+          </article>
+          <article>
+            <span class="swatch ember"></span>
+            <h3>Volcanic</h3>
+            <p>Hot coral controls over deep graphite surfaces.</p>
+          </article>
+          <article>
+            <span class="swatch ice"></span>
+            <h3>Frostline</h3>
+            <p>Cool cyan lighting with crisp white indicators.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Canopy Menu</span>
+      <span>Use mods responsibly in private or permitted lobbies.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
